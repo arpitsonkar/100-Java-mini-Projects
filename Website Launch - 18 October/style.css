@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 166, 0, 0.805);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h3{
+    text-align: center;
+}
+
+.box{
+    text-align: center;
+    margin: 5px;
+}
+
+.box input{
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box h6{
+    margin-top: 2px;
+    font-size: 7px;
+}
