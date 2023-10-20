@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(242, 242, 242),rgb(157, 148, 148));
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    width: 180px;
+    height: 250px;
+    border: 2px solid black;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(101, 100, 100);
+    background:black;
+}
+
+#display{
+    width: 160px;
+    height: 50px;
+    border: 0px solid white;
+    margin-top: 5px;
+    margin-left: 8px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+#display input{
+    width: 155px;
+    height: 45px;
+    font-size: 25px;
+    text-align: end;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+#buttons{
+    width:155px;
+    height:calc(100% - 68px);
+    border: black solid 0px;
+    margin-left: 11px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background:rgb(0, 0, 0);
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    margin: 2.8px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    background-color: rgb(39, 38, 38);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    border: 1px solid snow;
+}
+
+.chan{
+    background-color: orange;
+    color: black;
+    box-shadow: 0px 0px 0px gray;
+    border: 0px solid snow;
+}
+
+.upb{
+    background-color: rgb(201, 201, 201);
+    color: black;
+    box-shadow: 0px 0px 0px gray;
+    border: 0px solid snow;
+}
