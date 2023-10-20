@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(11, 117, 204),rgb(16, 83, 124)) no-repeat;
+}
+
+#card{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#main{
+    width: 400px;
+    height: 100px;
+    color: white;
+}
+
+#inputf{
+  width: 180px;
+  display: flex;
+  height: 25px;
+  background-color: white;  
+    position: relative;
+    border-radius: 2px;
+}
+
+#inputf input{
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+}
+
+#inputf img{
+    padding: 4px;
+    position: absolute;
+    right: 2px;
+    width: 22px;
+    height: 25px;
+}
+
+#Password{
+    width: 180px;
+    display: flex;
+    height: 25px;
+    margin-top: 5px;
+    gap: 2px;
+    position: relative;
+}
+
+#Password img{
+    height: 18px;
+    position: absolute;
+    left: 3px;
+    top: 2.5px;
+}
+
+#Password h4{
+    background-color: rgba(72, 255, 0, 0.485);
+    padding: 2px 5px 0px 2px;
+    border-radius: 5px;
+    width: 155px;
+    text-align: right;
+    color: white;
+}
+
+#main h1,h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main h1{
+    color: rgb(67, 228, 8);
+}
+
+#main h3{
+    font-style: italic;
+    color: gainsboro;
+}
