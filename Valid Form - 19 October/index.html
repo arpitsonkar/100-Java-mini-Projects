@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid Form</title>
+</head>
+<script src="https://kit.fontawesome.com/bb1944640f.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="contaienr">
+        <div id="main">
+            <form>
+                <h2>Login Form</h2>
+                <div class="input-group one">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" id="full-name" onkeyup="validateName()" >
+                    <span id="name-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Phone No.</label>
+                    <input type="text" placeholder="Enter your number" id="phoneno" onkeyup="validatePhone()" >
+                    <span id="phone-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Email Id</label>
+                    <input type="text" placeholder="Enter your Email" id="emailid" onkeyup="validateEmail()" >
+                    <span id="email-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea placeholder="Enter Message" name="" id="textbox" cols="19" rows="2" onkeyup="validateText()"></textarea>
+                    <span id="text-error"></span>
+                </div>
+                <div class="input-group-one">
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="java.js"></script>
+</body>
+</html>
