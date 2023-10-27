@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(16, 199, 255);
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 1px black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+      width: 80px;
+      height: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+      outline: 0;
+      border: 0;
+      color: white;
+      background-color: black;
+      border-radius: 15px;
+    }
+    h3 {
+      display: inline;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-style: italic;
+    }
+  </style>
+  <body>
+    <h1 class="resx">Final</h1>
+    <h3 class="uone">Rock</h3>
+    <h3 class="utwo">Rock</h3>
+    <br />
+    <button class="userOne">PRESS 'A'</button>
+    <button class="userTwo">PRESS 'L'</button>
+
+    <script>
+      let resx = document.querySelector("h1");
+      let uone = document.querySelector(".uone");
+      let utwo = document.querySelector(".utwo");
+      let bodyx = document.querySelector('body');
+
+      function handleU1() {
+        resx.innerText = ""; // Clear the result
+        let mathx = Math.random() * 3;
+        if (mathx <= 1) {
+          uone.innerText = "Rock";
+        } else if (mathx <= 2) {
+          uone.innerText = "Paper";
+        } else if (mathx <= 3) {
+          uone.innerText = "Scissor";
+        }
+      }
+
+      function handleU2() {
+        resx.innerText = ""; // Clear the result
+        let mathx = Math.random() * 3;
+        if (mathx <= 1) {
+          utwo.innerText = "Rock";
+        } else if (mathx <= 2) {
+          utwo.innerText = "Paper";
+        } else if (mathx <= 3) {
+          utwo.innerText = "Scissor";
+        }
+      }
+
+      // Add key event listeners to the document
+      document.addEventListener("keydown", function (event) {
+        if (event.key == "a") {
+          // Spacebar key
+          handleU1();
+        } else if (event.key == "l") {
+          // Enter key
+          handleU2();
+        }
+
+        if (uone.innerText === "Rock" && utwo.innerText === "Rock") {
+          resx.innerText = "Draw";
+        } else if (uone.innerText === "Scissor" && utwo.innerText === "Scissor") {
+          resx.innerText = "Draw";
+        }else if (uone.innerText === "Paper" && utwo.innerText === "Paper") {
+          resx.innerText = "Draw";
+        }else if (uone.innerText === "Rock" && utwo.innerText === "Scissor") {
+          resx.innerText = "P2 Wins";
+        }else if (uone.innerText === "Rock" && utwo.innerText === "Paper") {
+          resx.innerText = "P2 Wins";
+        }else if (uone.innerText === "Paper" && utwo.innerText === "Rock") {
+          resx.innerText = "P1 Wins";
+        }else if (uone.innerText === "Paper" && utwo.innerText === "Scissor") {
+          resx.innerText = "P2 Wins";
+        }else if (uone.innerText === "Scissor" && utwo.innerText === "Paper") {
+          resx.innerText = "P1 Wins";
+        }else if (uone.innerText === "Scissor" && utwo.innerText === "Rock") {
+          resx.innerText = "P2 Wins";
+        }
+
+      });
+    </script>
+  </body>
+</html>
